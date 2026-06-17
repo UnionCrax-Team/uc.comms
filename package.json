@@ -1,0 +1,23 @@
+{
+  "name": "uc-comms",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "server",
+    "web",
+    "desktop",
+    "mobile"
+  ],
+  "scripts": {
+    "dev:server": "npm --workspace server run dev",
+    "dev:web": "npm --workspace web run dev",
+    "build": "npm --workspace web run build && npm --workspace server run build",
+    "build:desktop": "npm --workspace desktop run build",
+    "build:mobile": "npm --workspace mobile run build",
+    "typecheck": "npm --workspace server run typecheck && npm --workspace web run typecheck"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

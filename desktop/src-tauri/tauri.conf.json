@@ -1,0 +1,24 @@
+{
+  "productName": "UC.Comms",
+  "version": "0.1.0",
+  "identifier": "xyz.uccomms.uncx.desktop",
+  "build": {
+    "frontendDist": "..\\..\\web\\dist",
+    "devUrl": "http://localhost:5173"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "UC.Comms",
+        "width": 1180,
+        "height": 780,
+        "minWidth": 900,
+        "minHeight": 620,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  }
+}

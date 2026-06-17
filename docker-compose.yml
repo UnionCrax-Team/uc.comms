@@ -1,0 +1,26 @@
+services:
+  uc-comms:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VITE_UC_COMMS_API_URL: ${VITE_UC_COMMS_API_URL:-}
+    restart: unless-stopped
+    ports:
+      - "${PORT:-3000}"
+    environment:
+      NODE_ENV: ${NODE_ENV:-production}
+      PORT: ${PORT:-3000}
+      APP_BASE_URL: ${APP_BASE_URL:-http://localhost:3000}
+      TRUST_PROXY: ${TRUST_PROXY:-false}
+      ADMIN_USERNAME: ${ADMIN_USERNAME:-admin}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+      SESSION_SECRET: ${SESSION_SECRET}
+      SIGNUP_DISABLED: ${SIGNUP_DISABLED:-true}
+      INVITE_CODE: ${INVITE_CODE:-}
+      MAX_UPLOAD_MB: ${MAX_UPLOAD_MB:-20}
+    volumes:
+      - uc-comms-data:/app/data
+
+volumes:
+  uc-comms-data:

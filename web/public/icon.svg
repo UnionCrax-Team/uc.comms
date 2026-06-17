@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">UC Comms</title>
+  <desc id="desc">A private team chat mark.</desc>
+  <defs>
+    <linearGradient id="g" x1="80" y1="48" x2="432" y2="464" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="0.52" stop-color="#312e81"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="p" x1="132" y1="126" x2="386" y2="386" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#c4b5fd"/>
+      <stop offset="1" stop-color="#5eead4"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="132" fill="url(#g)"/>
+  <path d="M151 169c0-31 25-56 56-56h98c31 0 56 25 56 56v70c0 31-25 56-56 56h-63l-53 53c-9 9-24 3-24-10v-43c-8-10-14-23-14-37z" fill="url(#p)"/>
+  <path d="M206 214h102M206 254h68" stroke="#0f1020" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="381" cy="132" r="34" fill="#fbbf24"/>
+  <path d="M370 132h22M381 121v22" stroke="#0f1020" stroke-width="10" stroke-linecap="round"/>
+</svg>

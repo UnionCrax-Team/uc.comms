@@ -1,0 +1,23 @@
+[variables]
+app_domain = "${domain}"
+admin_password = "${password:32}"
+session_secret = "${base64:32}"
+
+[config]
+[[config.domains]]
+serviceName = "uc-comms"
+port = 3000
+host = "${app_domain}"
+
+env = [
+    "NODE_ENV=production",
+    "PORT=3000",
+    "APP_BASE_URL=https://${app_domain}",
+    "TRUST_PROXY=true",
+    "ADMIN_USERNAME=admin",
+    "ADMIN_PASSWORD=${admin_password}",
+    "SESSION_SECRET=${session_secret}",
+    "SIGNUP_DISABLED=true",
+    "INVITE_CODE=",
+    "MAX_UPLOAD_MB=20"
+]

@@ -1,0 +1,17 @@
+node_modules/
+dist/
+build/
+data/
+.env
+*.tsbuildinfo
+.DS_Store
+android/
+ios/
+target/
+capabilities/
+gen/
+icons/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.zip

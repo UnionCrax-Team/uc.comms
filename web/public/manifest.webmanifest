@@ -1,0 +1,18 @@
+{
+  "name": "UC Comms",
+  "short_name": "UC Comms",
+  "description": "Private text and media chat for small teams.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0f1020",
+  "theme_color": "#7c3aed",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
